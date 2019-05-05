@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: _Cars
+  m_EditorClassIdentifier: Assembly-CSharp::ScriptableChoiceList
+  groupName: Cars
+  list:
+  - {fileID: 11400000, guid: 156dca006e302534d9cb643dcc3cc424, type: 2}
+  - {fileID: 11400000, guid: a1a0ee482810e624ca19155ebd13600d, type: 2}
+  - {fileID: 11400000, guid: 2c9d337c60d772a4483e572e2682a3ff, type: 2}
+  - {fileID: 11400000, guid: d95ea0e5758de3249958a01365901953, type: 2}
+  - {fileID: 11400000, guid: 8da3836fd36e969408c802bcda95a288, type: 2}
+  - {fileID: 11400000, guid: 6787a976db988ab48b93961d1e5514d2, type: 2}
+  - {fileID: 11400000, guid: afc72ac03fa8e5440ae96b1627222837, type: 2}
+  - {fileID: 11400000, guid: 2d957c391eb90a140845b4f414af152a, type: 2}
+  - {fileID: 11400000, guid: cfa39b3b16caa244d817d74dff6cecb5, type: 2}
+  - {fileID: 11400000, guid: 750530ef4fab4bd4099709d971860b7f, type: 2}
+  - {fileID: 11400000, guid: 5c0e0d45040b7b84c9d9e3b54cb87266, type: 2}
+  - {fileID: 11400000, guid: 5ae8c345d61644b49a99d8e0a47ac9c3, type: 2}
