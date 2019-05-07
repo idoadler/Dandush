@@ -17,11 +17,7 @@ public class SoundManager : MonoBehaviour
 
         if (Instance != this)
             Destroy(this);
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
         audioSource = GetComponent<AudioSource>();
     }
 
