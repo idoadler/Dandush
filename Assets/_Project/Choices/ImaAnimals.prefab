@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7965383191049147011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4934904682282342725}
+  - component: {fileID: 3469545434482642877}
+  m_Layer: 0
+  m_Name: ImaAnimals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4934904682282342725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7965383191049147011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -61.42897, y: 1, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3469545434482642877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7965383191049147011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3a5967ef2e0b74bb7e6cf121315c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groupName: Tata
+  icon: {fileID: 21300000, guid: 965ab90c8740bbc45ab9938904a6620d, type: 3}
+  list:
+  - sprite: {fileID: 21300000, guid: 97e3f3bed60344a419507d2c5e3c18a7, type: 3}
+    clip: {fileID: 8300000, guid: 31daf3568fdb8a34fa775f8dea8f9f90, type: 3}
+  - sprite: {fileID: 21300000, guid: a771f99db9cc37a42812f7be28b9c733, type: 3}
+    clip: {fileID: 8300000, guid: daf6c67b6484cf14196343ff00d93260, type: 3}
+  - sprite: {fileID: 21300000, guid: 94f3d0b646a1d4147b0004f564a5e66c, type: 3}
+    clip: {fileID: 8300000, guid: 147ec2662f639444f86bde563bb8afe3, type: 3}
+  - sprite: {fileID: 21300000, guid: 09d882523f2ad904d83961b44e1f0dee, type: 3}
+    clip: {fileID: 8300000, guid: 0b8cb62754e652943851fae43e377b57, type: 3}
+  - sprite: {fileID: 21300000, guid: 0e848521fd7a8e5498a75d38df4f5037, type: 3}
+    clip: {fileID: 8300000, guid: f19ef9f666107ed42b1de8ea66c88656, type: 3}
+  - sprite: {fileID: 21300000, guid: a6a8008f3f311f3419bd851247c11194, type: 3}
+    clip: {fileID: 8300000, guid: e99f8d00ae1206844b1cb3d66366e100, type: 3}
+  - sprite: {fileID: 21300000, guid: cc40870f20d493e4d866c9ba36ced011, type: 3}
+    clip: {fileID: 8300000, guid: 53d9cfd4a6ad53d41b5545df8363523e, type: 3}
+  - sprite: {fileID: 21300000, guid: 241a62d8e817484428c344d7242f9733, type: 3}
+    clip: {fileID: 8300000, guid: d4d374dedfcb8f24aba7501fe16edc1c, type: 3}
+  - sprite: {fileID: 21300000, guid: 7d2a45065d41f3a4a808eda2a4d7331f, type: 3}
+    clip: {fileID: 8300000, guid: c4adf930a07817848898fafa7db926f4, type: 3}
+  - sprite: {fileID: 21300000, guid: aa6492674ac989b40bcd0a7995124892, type: 3}
+    clip: {fileID: 8300000, guid: 8bc6464f8e53b4f469d907636e116b2a, type: 3}
+  - sprite: {fileID: 21300000, guid: 4dc5bf2a68473a741a7a81c8c211a279, type: 3}
+    clip: {fileID: 8300000, guid: a3bb2b231367f1246b2183866deaa421, type: 3}
+  - sprite: {fileID: 21300000, guid: a5990a460c89c814ab93f3611e65e4fc, type: 3}
+    clip: {fileID: 8300000, guid: 8ce736da58ee47c4e9813ba8b3e45be3, type: 3}
+  - sprite: {fileID: 21300000, guid: cc95216d2464e064e9891212a2601ffa, type: 3}
+    clip: {fileID: 8300000, guid: 4c8c9ee1eab67774ab72609dd376bdf5, type: 3}
+  - sprite: {fileID: 21300000, guid: 284b8b54cea97464fa363d9f6cdd2ae5, type: 3}
+    clip: {fileID: 8300000, guid: bf61d66ffc66703438eff97ae93daa9a, type: 3}
+  - sprite: {fileID: 21300000, guid: 47c4420164095ea4ea7760189c7dcd80, type: 3}
+    clip: {fileID: 8300000, guid: 73f841cac127cb04d9d218bb7ca2e15d, type: 3}

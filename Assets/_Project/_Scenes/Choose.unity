@@ -451,7 +451,8 @@ MonoBehaviour:
     type: 3}
   Layout: {fileID: 441095947}
   choiceNumber: 3
-  choicesData: {fileID: 11400000, guid: 38b23bec65d1eb04bbc8dc52f9f37801, type: 2}
+  choicesData: {fileID: 3469545434482642877, guid: da34c06d8265a9943a1e1ae9e0d5d826,
+    type: 3}
 --- !u!1001 &1703233048493199881
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,10 +7,10 @@ public class ChoiceManager : MonoBehaviour
     public Choice ChoicePrefab;
     public Transform Layout;
     public int choiceNumber = 3;
-    public ScriptableChoiceList choicesData;
+    public ChoiceData choicesData;
 
     private List<Choice> choices = new List<Choice>();
-    private List<ScriptableChoiceData> randomChoices;
+    private List<BasicChoice> randomChoices;
     private int correctAnswer;
     private AudioClip targetClip;
 
@@ -18,7 +18,7 @@ public class ChoiceManager : MonoBehaviour
     void Start()
     {
         randomChoices = choicesData.GetRandomChoices(choiceNumber);
-        foreach (ScriptableChoiceData c in randomChoices)
+        foreach (BasicChoice c in randomChoices)
         {
             Choice choice = Instantiate(ChoicePrefab, Layout);
             choice.button.image.sprite = c.sprite;
