@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Choice : MonoBehaviour
+public class ChoiceUI : MonoBehaviour
 {
     public Button button;
-    public AudioClip clip;
 }

@@ -4,12 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class ChoiceManager : MonoBehaviour
 {
-    public Choice ChoicePrefab;
+    public ChoiceUI ChoicePrefab;
     public Transform Layout;
     public int choiceNumber = 3;
-    public ChoiceData choicesData;
-
-    private List<Choice> choices = new List<Choice>();
+    public ChoiceListData choicesData;
+    
     private List<BasicChoice> randomChoices;
     private int correctAnswer;
     private AudioClip targetClip;
@@ -18,18 +17,21 @@ public class ChoiceManager : MonoBehaviour
     void Start()
     {
         randomChoices = choicesData.GetRandomChoices(choiceNumber);
-        foreach (BasicChoice c in randomChoices)
-        {
-            Choice choice = Instantiate(ChoicePrefab, Layout);
-            choice.button.image.sprite = c.sprite;
-            choice.clip = c.clip;
-            choice.button.onClick.AddListener(WrongAnswer);
-            choices.Add(choice);
-        }
         correctAnswer = Random.Range(0, choiceNumber);
-        choices[correctAnswer].button.onClick.RemoveListener(WrongAnswer);
-        choices[correctAnswer].button.onClick.AddListener(RightAnswer);
-        targetClip = choices[correctAnswer].clip;
+        for (int i = 0; i < randomChoices.Count; i++)
+        {
+            ChoiceUI choice = Instantiate(ChoicePrefab, Layout);
+            choice.button.image.sprite = randomChoices[i].sprite;
+            if (correctAnswer == i)
+            {
+                choice.button.onClick.AddListener(RightAnswer);
+                targetClip = randomChoices[i].clip;
+            }
+            else
+            {
+                choice.button.onClick.AddListener(WrongAnswer);
+            }
+        }
         SoundManager.Instance.Play(targetClip);
     }
 

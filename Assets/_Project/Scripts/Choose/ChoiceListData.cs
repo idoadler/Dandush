@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class ChoiceData : MonoBehaviour
+public class ChoiceListData : MonoBehaviour
 {
-    public string groupName = "";
+    public string listName = "";
     public Sprite icon;
     public List<BasicChoice> list;
 

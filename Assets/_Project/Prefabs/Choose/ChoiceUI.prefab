@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2578839619655426971}
   - component: {fileID: 109603838960481462}
   m_Layer: 5
-  m_Name: Choice
+  m_Name: ChoiceUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,4 +134,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2578839619655426971}
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: c4adf930a07817848898fafa7db926f4, type: 3}
