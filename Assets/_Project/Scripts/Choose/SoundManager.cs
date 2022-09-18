@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip[] wrong;
 
     public AudioSource audioSource;
+    private AudioClip lastClip;
 
     private void Awake()
     {
@@ -28,18 +30,28 @@ public class SoundManager : MonoBehaviour
 
     public void PlayLose()
     {
-        PlayOneShot(wrong[Random.Range(0, correct.Length)]);
+        audioSource.Pause();
+        audioSource.clip = null;
+        var clip = wrong[Random.Range(0, correct.Length)];
+        PlayOneShot(clip);
+        Invoke(nameof(KeepPlay), clip.length + 0.2f);
+    }
+
+    private void KeepPlay()
+    {
+        Play(lastClip);
     }
 
     public void Play(AudioClip clip, bool loop = true)
     {
+        lastClip = clip;
         audioSource.clip = clip;
         audioSource.loop = loop;
         audioSource.Play();
     }
 
-    public void PlayOneShot(AudioClip clip)
+    private void PlayOneShot(AudioClip clip)
     {
-        audioSource?.PlayOneShot(clip);
+        audioSource.PlayOneShot(clip);
     }
 }
